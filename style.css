@@ -1,0 +1,263 @@
+/* Index Page (HOME)*/
+
+#gameTitle{
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;  
+}
+
+.begin{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#start{
+  margin-top: 5%;
+  background-color: green;
+  color: white;
+  font-size: 200%;
+}
+
+#start:hover{
+  background-color: red;
+  color: blue;
+}
+
+#tutorial{
+  margin-top: 10%;
+  hight: 20%;
+  background-color: green;
+  color: white;
+  font-size: 200%;
+}
+
+#tutorial:hover{
+  background-color: red;
+  color: blue;
+}
+
+#homeBody{
+  background-image: url("https://i.imgur.com/CmRQMw8.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+a:link{
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: blue;
+}
+
+/* Tutorial */
+
+#tutorialBody{
+  background-image: url("https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+}
+
+#tutorialControls{
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#moving{
+  width: 20%;
+}
+
+#attacking{
+  width: 20%;
+  margin-right: 15%;
+}
+
+#tutorialPage{
+  width: 100%;
+  display: flex;
+}
+
+.placeholder{
+  width: 25%;
+}
+
+#updown{
+  width: 90%;
+  margin-top: 30%;
+}
+
+.titleCards{
+  font-size: 250%;
+  text-decoration: underline;
+}
+
+.instr{
+  font-size: 200%;
+}
+
+#sec{
+  position: absolute;
+  right: 11%;
+}
+
+/* Game */
+
+#gameBody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvasContainer{
+  display: inline-block;
+  margin-top: 4%;
+}
+
+#canvas{
+  border: solid 1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#quit{
+  background-color: green;
+  color: white;
+  font-size: 150%;
+  margin-top: 5%;
+}
+
+#quit:hover{
+  background-color: red;
+  color: blue;
+  cursor: pointer;
+}
+
+#resume{
+  background-color: green;
+  color: white;
+  font-size: 150%;
+}
+
+#resume:hover{
+  background-color: red;
+  color: blue;
+  cursor: pointer;
+}
+
+#restart{
+  background-color: green;
+  color: white;
+  font-size: 150%;
+  margin-top: 5%;
+}
+
+#restart:hover{
+  background-color: red;
+  color: blue;
+  cursor: pointer;
+}
+
+.restartHard{
+  background-color: red;
+  color: white;
+  font-size: 150%;
+  margin-top: 5%;
+}
+.restartHard:hover{
+  background-color: black;
+  color: blue;
+  cursor: pointer;
+}
+
+.infiniteMode{
+  background-color: purple;
+  color: white;
+  font-size: 150%;
+  margin-top: 5%;
+}
+
+.infiniteMode:hover{
+  background-color: black;
+  color: blue;
+  cursor: pointer;
+}
+
+#pause{
+  text-decoration: underline;
+}
+
+#gameOver{
+  text-decoration: underline;
+}
+
+#gTitle{
+  position: absolute;
+  top: -1%;
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#door{
+  position: absolute;
+  right: 12%;
+  top: 30%;
+  height: 25%;
+  width: 15%;
+}
+
+#clickDoor{
+  position: absolute;
+  right: 15%;
+  top: 40%;
+}
+
+#esc{
+  font-size: 120%;
+}
+
+#UI{
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+}
+
+/*Game Dialogue  */
+.dialogueContainer{
+  border: solid;
+  position: relative;
+  display: flex;
+  z-index: 1000000;
+  background: chocolate;
+}
+
+.dialogueImg{
+  width: 128px;
+}
+
+.dialogueText{
+  flex-grow: 1;
+  border-left: solid
+}
+
+/* End */
+
+#endingBody{
+  background-image: url("https://static1.fjcdn.com/comments/Id+have+her+not+wear+panties+too+if+i+could+_e3d64985fe039d494fe08dc1904567d5.png"), url("http://pixelartmaker.com/art/5b394971fa35655.png");
+  background-repeat: no-repeat;
+}
+
+.home{
+  position: absolute;
+}
