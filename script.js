@@ -1011,6 +1011,7 @@ let stage6 = new Stage((stage) => {
 
 let infiniteStage = new Stage((stage) => {
   let mob = new Mobs(1, 1, 128, 128, stage);
+  mob.jumpTo(randomInt(width / 2, width), randomInt(0, height));
 }, (stage) => {
   //on stage end repeat spawn
   cleanseProjectile();
@@ -1046,10 +1047,10 @@ let infiniteStage = new Stage((stage) => {
       initial: [],
       repeat: []
     }
-    let repeatAICount = randomInt(0, Math.floor(stage.loop));
+    let repeatAICount = randomInt(0, Math.floor(stage.loop)) + 3;
     if (id === 4){
       mob.health *= 1.5;
-      repeatAICount += 2;
+      repeatAICount *= 2;
     }
     for (let j = 0; j < repeatAICount; j ++){
       let ai = possibleAI[randomInt(0, possibleAI.length)];
@@ -1070,9 +1071,9 @@ let infiniteStage = new Stage((stage) => {
         mob.AI.repeat[mob.AI.repeat.length - 1] = "heal" + attackTime/20;
       }else if (ai === "summon"){
         mob.AI.repeat = mob.AI.repeat.concat(AIPack.summon);
-        let waitTime = randomInt(1000 - stage.loop * 100, 1000);
-        if (waitTime < 100){
-          waitTime = 100;
+        let waitTime = randomInt(2000 - stage.loop * 100, 2000);
+        if (waitTime < 200){
+          waitTime = 200;
         }
         mob.AI.repeat[mob.AI.repeat.length - 1] = "wait" + waitTime;
       }
